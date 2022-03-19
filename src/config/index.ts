@@ -1,3 +1,6 @@
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 const type = process.env.DB_TYPE;
 const host = process.env.DB_HOST;
 const port = parseInt(process.env.DB_PORT);
