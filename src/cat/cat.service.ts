@@ -1,5 +1,6 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
+import { SortDirerction } from 'src/enum/sort-direction.enum';
 import { DeleteResult, Repository } from 'typeorm';
 import { CatList } from './dto/cat-list.dto';
 import { CreateCatDto } from './dto/create-cat.dto';
@@ -35,10 +36,11 @@ export class CatService {
   async findAll(
     searchName?: string,
     sortBy?: string,
-    sortDirection?: 'ASC' | 'DESC',
+    sortDirection?: SortDirerction,
     page = 1,
     limit = 20,
   ): Promise<CatList> {
+    page = page <= 0 ? 1 : page;
     const offset = (page - 1) * limit;
     let query = await this.catRepository.createQueryBuilder();
     if (searchName) {
