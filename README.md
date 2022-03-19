@@ -25,6 +25,18 @@ For example, http://localhost:3000/api  at localhost.
 $ npm install
 ```
 
+## env Configuration
+
+There is .env.sample file. This must be replaced with real value and rename it to .env
+
+For example:
+DB_TYPE=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USERNAME=
+DB_PASSWORD=
+DB_NAME=cat_breeds
+
 ## Running the app
 
 ```bash
