@@ -28,8 +28,8 @@ $ npm install
 ## env Configuration
 
 There is .env.sample file. This must be replaced with real value and rename it to .env
-
-For example:
+<br/>
+For example:<br/>
 DB_TYPE=mysql<br/>
 DB_HOST=127.0.0.1<br/>
 DB_PORT=3306<br/>
