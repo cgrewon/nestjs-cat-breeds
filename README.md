@@ -30,12 +30,12 @@ $ npm install
 There is .env.sample file. This must be replaced with real value and rename it to .env
 
 For example:
-DB_TYPE=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_USERNAME=
-DB_PASSWORD=
-DB_NAME=cat_breeds
+DB_TYPE=mysql<br/>
+DB_HOST=127.0.0.1<br/>
+DB_PORT=3306<br/>
+DB_USERNAME=<br/>
+DB_PASSWORD=<br/>
+DB_NAME=cat_breeds<br/>
 
 ## Running the app
 
